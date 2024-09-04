@@ -1,0 +1,21 @@
+meta {
+  name: Put
+  type: http
+  seq: 1
+}
+
+put {
+  url: http://127.0.0.1:4000/api/todo/3
+  body: none
+  auth: none
+}
+
+body:json {
+  {
+    "body": "new 1"
+  }
+}
+
+body:form-urlencoded {
+  body: new value
+}

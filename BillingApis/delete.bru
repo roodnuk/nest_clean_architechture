@@ -1,0 +1,21 @@
+meta {
+  name: delete
+  type: http
+  seq: 2
+}
+
+delete {
+  url: http://127.0.0.1:4000/api/todo/3
+  body: none
+  auth: none
+}
+
+body:json {
+  {
+    "body": "new 1"
+  }
+}
+
+body:form-urlencoded {
+  body: new value
+}
